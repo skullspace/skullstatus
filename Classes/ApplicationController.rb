@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'json'
+framework 'CoreLocation'
 
 class ApplicationController
   KInternetEventClass = KAEGetURL = 'GURL'.unpack('N').first
@@ -29,6 +30,14 @@ class ApplicationController
         sleep 10
       end
     end
+
+    loc = CLLocationManager.alloc.init
+    loc.delegate = self
+    loc.startUpdatingLocation
+  end
+
+  def locationManager(manager, didUpdateToLocation: new_location, fromLocation: old_location)
+    @location = new_location.description
   end
 
   def updateStatus
