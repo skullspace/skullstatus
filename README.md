@@ -10,5 +10,5 @@ join the party.
 Currently there is no switch, the status server is hardcoded to "Yes",
 and there is only an OS X client application. Baby steps.
 
-(OS X
-Application)[http://github.com/skullspace/skullstatus/refs/heads/osx-trayicon]
+[OS X
+Application](https://github.com/skullspace/skullstatus/tree/osx-trayicon)
