@@ -12,6 +12,9 @@ class ApplicationController
     @status_bar  = NSStatusBar.systemStatusBar
     @status_item = @status_bar.statusItemWithLength(NSVariableStatusItemLength)
     @status_item.setHighlightMode(true)
+    @menu = NSMenu.alloc.initWithTitle(initWithTitle:"DockMenu")
+    @menu.setAutoenablesItems(false)
+
     @status_item.setMenu(@menu)
 
     @app_empty_icon         = NSImage.imageNamed('skullspace-empty.png')
@@ -23,6 +26,18 @@ class ApplicationController
 
     @status_item.setImage(@app_problem_icon)
     @status_item.setAlternateImage(@app_problem_alter_icon)
+
+    @location_menu_item = NSMenuItem.alloc.init
+    @location_menu_item.setTarget(self)
+    @location_menu_item.title = "N/A"
+
+    @quit_menu_item = NSMenuItem.alloc.init
+    @quit_menu_item.setTarget(self)
+    @quit_menu_item.title = "Quit"
+    @quit_menu_item.setAction "cleanupAndQuit:"
+
+    @menu.addItem @location_menu_item
+    @menu.addItem @quit_menu_item
 
     Thread.new do
       loop do
@@ -36,8 +51,12 @@ class ApplicationController
     loc.startUpdatingLocation
   end
 
+  def cleanupAndQuit(sender)
+    exit
+  end
+
   def locationManager(manager, didUpdateToLocation: new_location, fromLocation: old_location)
-    @location = new_location.description
+    @location_menu_item.title = new_location.description
   end
 
   def updateStatus
