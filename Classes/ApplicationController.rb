@@ -15,6 +15,8 @@ class ApplicationController
     @menu = NSMenu.alloc.initWithTitle(initWithTitle:"DockMenu")
     @menu.setAutoenablesItems(false)
 
+    @skullspace = CLLocation.alloc.initWithLatitude(49.8996690, longitude: -97.14234410)
+
     @status_item.setMenu(@menu)
 
     @app_empty_icon         = NSImage.imageNamed('skullspace-empty.png')
@@ -29,6 +31,7 @@ class ApplicationController
 
     @location_menu_item = NSMenuItem.alloc.init
     @location_menu_item.setTarget(self)
+    @location_menu_item.setEnabled(false)
     @location_menu_item.title = "N/A"
 
     @quit_menu_item = NSMenuItem.alloc.init
@@ -59,8 +62,9 @@ class ApplicationController
     # 49.8996690
     # 97.14234410
     # "formatted_address" : "125 Adelaide St, Winnipeg, MB R3A 0H7, Canada",
-    #
-    @location_menu_item.title = new_location.description
+    meters_from_skullspace =  new_location.distanceFromLocation @skullspace
+    km_from_skullspace = meters_from_skullspace/1000
+    @location_menu_item.title = "#{km_from_skullspace.round(2)} km from Skullspace"
   end
 
   def updateStatus
