@@ -8,27 +8,26 @@ class ApplicationController
   attr_accessor :menu
 
   def awakeFromNib
-    @status_bar = NSStatusBar.systemStatusBar
+    @status_bar  = NSStatusBar.systemStatusBar
     @status_item = @status_bar.statusItemWithLength(NSVariableStatusItemLength)
     @status_item.setHighlightMode(true)
     @status_item.setMenu(@menu)
 
-    @app_empty_icon = NSImage.imageNamed('skullspace-empty.png')
-    @app_empty_alter_icon = NSImage.imageNamed('skullspace-empty-alt.png')
-    @app_full_icon = NSImage.imageNamed('skullspace-full.png')
-    @app_full_alter_icon = NSImage.imageNamed('skullspace-full-alt.png')
-    @app_problem_icon = NSImage.imageNamed('skullspace-problem.png')
+    @app_empty_icon         = NSImage.imageNamed('skullspace-empty.png')
+    @app_empty_alter_icon   = NSImage.imageNamed('skullspace-empty-alt.png')
+    @app_full_icon          = NSImage.imageNamed('skullspace-full.png')
+    @app_full_alter_icon    = NSImage.imageNamed('skullspace-full-alt.png')
+    @app_problem_icon       = NSImage.imageNamed('skullspace-problem.png')
     @app_problem_alter_icon = NSImage.imageNamed('skullspace-problem-alt.png')
 
-    
     @status_item.setImage(@app_problem_icon)
     @status_item.setAlternateImage(@app_problem_alter_icon)
-    
+
     Thread.new do
       loop do
         updateStatus
         sleep 10
-      end      
+      end
     end
   end
 
@@ -42,24 +41,24 @@ class ApplicationController
       else
         setProblem
       end
-    rescue 
+    rescue
       setProblem
     end
   end
-  
+
   def setProblem
     @status_item.setImage(@app_problem_icon)
     @status_item.setAlternateImage(@app_problem_alter_icon)
   end
-  
+
   def setFull
     @status_item.setImage(@app_full_icon)
     @status_item.setAlternateImage(@app_full_alter_icon)
   end
-  
+
   def setEmpty
     @status_item.setImage(@app_empty_icon)
     @status_item.setAlternateImage(@app_empty_alter_icon)
-  end 
-    
+  end
+
 end
