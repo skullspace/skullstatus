@@ -39,7 +39,11 @@ class ApplicationController
     @quit_menu_item.title = "Quit"
     @quit_menu_item.setAction "cleanupAndQuit:"
 
+    @seperator_menu_item = NSMenuItem.separatorItem
+    @seperator_menu_item.setTarget(self)
+
     @menu.addItem @location_menu_item
+    @menu.addItem @seperator_menu_item
     @menu.addItem @quit_menu_item
 
     Thread.new do
