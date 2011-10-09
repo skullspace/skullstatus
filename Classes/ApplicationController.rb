@@ -56,6 +56,10 @@ class ApplicationController
   end
 
   def locationManager(manager, didUpdateToLocation: new_location, fromLocation: old_location)
+    # 49.8996690
+    # 97.14234410
+    # "formatted_address" : "125 Adelaide St, Winnipeg, MB R3A 0H7, Canada",
+    #
     @location_menu_item.title = new_location.description
   end
 
