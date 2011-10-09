@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0BBCED12EBFC2700D98CD8 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BBCEC12EBFC2700D98CD8 /* Growl.framework */; };
+		1A0BBCF512EBFC4300D98CD8 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A0BBCEC12EBFC2700D98CD8 /* Growl.framework */; };
+		1A30BF2113E397B800337B6C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A30BF2013E397B800337B6C /* Security.framework */; };
+		1AC3DC9012748643006832E4 /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DC8412748643006832E4 /* app.icns */; };
+		1AC3DC9E12748667006832E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DC9A12748667006832E4 /* Localizable.strings */; };
+		1AC3DC9F12748667006832E4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DC9C12748667006832E4 /* MainMenu.nib */; };
+		1AC3DCA41274867D006832E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DCA01274867D006832E4 /* InfoPlist.strings */; };
+		1AC3DCBC12748752006832E4 /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3DCB712748752006832E4 /* ApplicationController.rb */; };
+		1AC3DDE01275CF44006832E4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3DDDF1275CF44006832E4 /* Sparkle.framework */; };
+		1AC3DDEB1275CF8E006832E4 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1AC3DDDF1275CF44006832E4 /* Sparkle.framework */; };
+		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
+		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
+		82FF40D514411BA300441852 /* skullspace-empty-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40D114411BA300441852 /* skullspace-empty-alt.png */; };
+		82FF40D614411BA300441852 /* skullspace-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40D214411BA300441852 /* skullspace-empty.png */; };
+		82FF40D714411BA300441852 /* skullspace-full-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40D314411BA300441852 /* skullspace-full-alt.png */; };
+		82FF40D814411BA300441852 /* skullspace-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40D414411BA300441852 /* skullspace-full.png */; };
+		82FF40DB14411D1700441852 /* skullspace-problem-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40D914411D1700441852 /* skullspace-problem-alt.png */; };
+		82FF40DC14411D1700441852 /* skullspace-problem.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FF40DA14411D1700441852 /* skullspace-problem.png */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A8277B013D928CB00B436BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = Skullstatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		172754B4107597CF00D0347B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A0BBCF512EBFC4300D98CD8 /* Growl.framework in CopyFiles */,
+				1AC3DDEB1275CF8E006832E4 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1A0BBCEC12EBFC2700D98CD8 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = Libs/Growl.framework; sourceTree = "<group>"; };
+		1A0BBD1712EC041F00D98CD8 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		1A30BF2013E397B800337B6C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1AC3DC8412748643006832E4 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = Resources/app.icns; sourceTree = "<group>"; };
+		1AC3DCA11274867D006832E4 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AC3DCA21274867D006832E4 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1AC3DCA31274867D006832E4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = Resources/English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		1AC3DCB712748752006832E4 /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ApplicationController.rb; path = Classes/ApplicationController.rb; sourceTree = "<group>"; };
+		1AC3DDDF1275CF44006832E4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Libs/Sparkle.framework; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+		82FF40D114411BA300441852 /* skullspace-empty-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-empty-alt.png"; path = "Resources/skullspace-empty-alt.png"; sourceTree = "<group>"; };
+		82FF40D214411BA300441852 /* skullspace-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-empty.png"; path = "Resources/skullspace-empty.png"; sourceTree = "<group>"; };
+		82FF40D314411BA300441852 /* skullspace-full-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-full-alt.png"; path = "Resources/skullspace-full-alt.png"; sourceTree = "<group>"; };
+		82FF40D414411BA300441852 /* skullspace-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-full.png"; path = "Resources/skullspace-full.png"; sourceTree = "<group>"; };
+		82FF40D914411D1700441852 /* skullspace-problem-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-problem-alt.png"; path = "Resources/skullspace-problem-alt.png"; sourceTree = "<group>"; };
+		82FF40DA14411D1700441852 /* skullspace-problem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "skullspace-problem.png"; path = "Resources/skullspace-problem.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Skullstatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skullstatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A30BF2113E397B800337B6C /* Security.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
+				1AC3DDE01275CF44006832E4 /* Sparkle.framework in Frameworks */,
+				1A0BBCED12EBFC2700D98CD8 /* Growl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3DCB512748735006832E4 /* Controllers */,
+				1AC3DCC012748757006832E4 /* Models */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A30BF2013E397B800337B6C /* Security.framework */,
+				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				1AC3DDDF1275CF44006832E4 /* Sparkle.framework */,
+				1A0BBCEC12EBFC2700D98CD8 /* Growl.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Skullstatus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC3DCB512748735006832E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3DCB712748752006832E4 /* ApplicationController.rb */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1AC3DCC012748757006832E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Skullstatus */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Skullstatus;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4DE339F60D74FCDD00ADB6EE /* rb_main.rb */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82FF40D914411D1700441852 /* skullspace-problem-alt.png */,
+				82FF40DA14411D1700441852 /* skullspace-problem.png */,
+				82FF40D114411BA300441852 /* skullspace-empty-alt.png */,
+				82FF40D214411BA300441852 /* skullspace-empty.png */,
+				82FF40D314411BA300441852 /* skullspace-full-alt.png */,
+				82FF40D414411BA300441852 /* skullspace-full.png */,
+				1AC3DCA01274867D006832E4 /* InfoPlist.strings */,
+				1AC3DC9C12748667006832E4 /* MainMenu.nib */,
+				1AC3DC9A12748667006832E4 /* Localizable.strings */,
+				1AC3DC8412748643006832E4 /* app.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				1A0BBD1712EC041F00D98CD8 /* Growl Registration Ticket.growlRegDict */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		1A8277AC13D9287000B436BB /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed --bs";
+			buildConfigurationList = 1A8277AD13D9287000B436BB /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = "";
+			dependencies = (
+				1A8277B113D928CB00B436BB /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Skullstatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Skullstatus" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				172754B4107597CF00D0347B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skullstatus;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Skullstatus;
+			productReference = 8D1107320486CEB800E47090 /* Skullstatus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Skullstatus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Skullstatus */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Skullstatus */,
+				1A8277AC13D9287000B436BB /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
+				1AC3DC9012748643006832E4 /* app.icns in Resources */,
+				1AC3DC9E12748667006832E4 /* Localizable.strings in Resources */,
+				1AC3DC9F12748667006832E4 /* MainMenu.nib in Resources */,
+				1AC3DCA41274867D006832E4 /* InfoPlist.strings in Resources */,
+				1AC3DCBC12748752006832E4 /* ApplicationController.rb in Resources */,
+				82FF40D514411BA300441852 /* skullspace-empty-alt.png in Resources */,
+				82FF40D614411BA300441852 /* skullspace-empty.png in Resources */,
+				82FF40D714411BA300441852 /* skullspace-full-alt.png in Resources */,
+				82FF40D814411BA300441852 /* skullspace-full.png in Resources */,
+				82FF40DB14411D1700441852 /* skullspace-problem-alt.png in Resources */,
+				82FF40DC14411D1700441852 /* skullspace-problem.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A8277B113D928CB00B436BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Skullstatus */;
+			targetProxy = 1A8277B013D928CB00B436BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AC3DC9A12748667006832E4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC3DCA21274867D006832E4 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1AC3DC9C12748667006832E4 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC3DCA31274867D006832E4 /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		1AC3DCA01274867D006832E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC3DCA11274867D006832E4 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A8277AE13D9287000B436BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+			};
+			name = Debug;
+		};
+		1A8277AF13D9287000B436BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 98;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Skullstatus;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 98;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Skullstatus;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A8277AD13D9287000B436BB /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8277AE13D9287000B436BB /* Debug */,
+				1A8277AF13D9287000B436BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Skullstatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Skullstatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
